@@ -1,5 +1,5 @@
 <Solution>
   <Project Path="Calculadora.tests/Calculadora.tests.csproj" Id="f5a9f671-f271-4664-a763-68b5f253f386" />
-  <Project Path="CalculadoraDeMedias01/CalculadoraDeMedias01.csproj" />
+  <Project Path="CalculadoraDeMedias01/CalculadoraDeMedias07.csproj" />
   <Project Path="ESWA07CalculadoraDeMedias/ESWA07CalculadoraDeMedias.csproj" />
 </Solution>
