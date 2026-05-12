@@ -118,7 +118,7 @@ namespace CalculadoraDeMedias01
             txtExame.Clear();
             lblResultadoFinal.Text = "0,0";
 
-            // Se quiser que o status volte para "EM EXAME" ao limpar o final:
+            // Status volte para "EM EXAME" ao limpar o final:
             lblStatus.Text = "EM EXAME";
             lblStatus.ForeColor = Color.Black;
 
