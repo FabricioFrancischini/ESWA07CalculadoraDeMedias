@@ -1,4 +1,5 @@
 using ESWA07CalculadoraDeMedias;
+using OOPFoundation;
 namespace CalculadoraDeMedias01
 {
     public partial class Form1 : Form
@@ -17,11 +18,13 @@ namespace CalculadoraDeMedias01
             bool n2Ok = double.TryParse(txtNP2.Text, out double n2);
             bool pOk = double.TryParse(txtPIM.Text, out double p);
 
-            // 2. Verifica se as conversões deram certo e se os valores estão entre 0 e 10
+           
+            NoteValidation validator = new NoteValidation();
+
             if (n1Ok && n2Ok && pOk &&
-                n1 >= 0 && n1 <= 10 &&
-                n2 >= 0 && n2 <= 10 &&
-                p >= 0 && p <= 10)
+                validator.DoubleIsValid(n1, 10) &&
+                validator.DoubleIsValid(n2, 10) &&
+                validator.DoubleIsValid(p, 10))
             {
                 // 3. Se estiver tudo OK, faz o cálculo usando sua DLL
                 Calculadora calc = new Calculadora();
